@@ -71,7 +71,7 @@ useEffect(() => {
 
   return (
     <div className="font-sans text-gray-700 bg-white relative">
-       <nav className="fixed w-full backdrop-blur-md bg-white/70 shadow z-50">
+       <nav className="fixed w-full backdrop-blur-md bg-white/70 shadow z-20">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="flex justify-between items-center h-16">
       <a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }} className="flex items-center space-x-2 cursor-pointer hover:opacity-90">
@@ -115,40 +115,26 @@ useEffect(() => {
   </div>
 </nav>
           {/* Hero Section */}
-    <section id="home" className="relative min-h-screen flex items-center justify-center text-center px-6 pt-24 bg-gradient-to-br from-green-100 via-white to-green-50">
-  <motion.div
-    initial={{ opacity: 0, y: 40 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1 }}
-    className="max-w-3xl mx-auto"
-  >
-    <img
-      src="/logo.png"
-      alt="Yogisha's Nest Logo"
-      className="mx-auto w-40 md:w-56 mb-6 drop-shadow-md hover:scale-105 transition-transform"
-    />
-    <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-800 leading-tight">
-      Blossom into <span className="text-green-600">Stillness</span>
+<section
+  id="home"
+  className="relative h-screen w-full bg-cover bg-center bg-no-repeat flex items-center justify-center text-white"
+  style={{ backgroundImage: "url('/infra.jpg')" }}
+>
+  {/* Dark top gradient overlay */}
+  <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-transparent"></div>
+
+  {/* Text content */}
+  <div className="relative z-10 text-center px-4">
+    <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight drop-shadow-md">
+      Blossom into <span className="text-green-300">Stillness</span>
     </h1>
-    <p className="mt-4 text-lg sm:text-xl text-gray-600 max-w-prose mx-auto">
+    <p className="mt-4 text-lg sm:text-xl max-w-xl mx-auto drop-shadow-sm">
       A peaceful space to read, work, and grow in the heart of Baguio.
     </p>
-    <div className="mt-6 flex justify-center gap-4 flex-wrap">
-      <a
-        href="https://maps.app.goo.gl/W8n5B2dE2sJNQcLW9"
-        className="flex items-center gap-2 px-6 py-3 bg-green-500 text-white text-base font-medium rounded-full shadow-lg hover:bg-green-600 transition"
-      >
-        <FaMapMarkerAlt /> Visit Us
-      </a>
-      <a
-        href="https://wa.me/639619047116"
-        className="flex items-center gap-2 px-6 py-3 border border-green-500 text-green-600 font-medium rounded-full hover:bg-green-100 transition"
-      >
-        <FaWhatsapp /> WhatsApp
-      </a>
-    </div>
-  </motion.div>
+  </div>
 </section>
+
+
 
 
 <div className="relative w-full overflow-hidden leading-none rotate-180">
