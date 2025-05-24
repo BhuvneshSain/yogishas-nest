@@ -1,3 +1,10 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import {
@@ -70,7 +77,8 @@ export default function YogishasNestLanding() {
     <div className="font-sans text-gray-700 bg-white relative">
 
       {/* Navbar */}
-      <nav className="fixed w-full backdrop-blur-md bg-white/70 shadow z-20">
+<nav className="fixed w-full bg-white shadow z-20">
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection("home"); }} className="flex items-center space-x-2 cursor-pointer hover:opacity-90">
@@ -148,39 +156,41 @@ export default function YogishasNestLanding() {
         </motion.div>
       </section>
       {/* Gallery Section */}
-      <section id="gallery" className="py-20 px-4 bg-white">
-        <motion.h2
-          className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          A Glimpse Inside
-        </motion.h2>
+<section id="gallery" className="py-20 px-6 bg-white text-center">
+  <h2 className="text-3xl md:text-4xl font-bold mb-12 text-gray-800">A Glimpse Inside</h2>
 
-        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-          {[...Array(6)].map((_, i) => (
-            <motion.div
-              key={i}
-              className="relative overflow-hidden rounded-xl shadow-lg group"
-              whileHover={{ scale: 1.02 }}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
-            >
-              <img
-                src={`/gallery${i + 1}.jpg`}
-                alt={`Gallery ${i + 1}`}
-                className="w-full h-72 object-cover"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-lg font-medium">
-                View {i + 1}
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-    
+  <div className="max-w-6xl mx-auto">
+    <Swiper
+      modules={[Autoplay, Pagination, Navigation]}
+      navigation
+      pagination={{ clickable: true }}
+      autoplay={{ delay: 3000, disableOnInteraction: false }}
+      loop
+      spaceBetween={40}
+      slidesPerView={1}
+      className="rounded-lg shadow-lg"
+    >
+      {[1, 2, 3, 4, 5, 6].map((i) => (
+  
+        <SwiperSlide key={i}>
+  <div className="relative group overflow-hidden rounded-2xl shadow-xl transition-all duration-500 ease-in-out">
+    <img
+      src={`/gallery${i}.jpg`}
+      alt={`Gallery ${i}`}
+      className="w-full max-h-[90vh] object-contain transition-transform duration-500 group-hover:scale-105"
+    />
+    <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/50 to-transparent text-white text-sm py-3 px-4 opacity-0 group-hover:opacity-100 transition">
+      View {i}
+    </div>
+  </div>
+</SwiperSlide>
+
+      ))}
+    </Swiper>
+  </div>
+</section>
+
+
 
       {/* Amenities Section */}
       <section id="amenities" className="py-20 px-6 bg-white text-center">
