@@ -131,10 +131,10 @@ export default function YogishasNestLanding() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-transparent"></div>
         <div className="relative z-10 text-center px-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight drop-shadow-md">
-            Blossom into <span className="text-green-300">Stillness</span>
+            Blossom into <span className="text-green-300">A Full-Fledged Life!</span>
           </h1>
           <p className="mt-4 text-lg sm:text-xl max-w-xl mx-auto drop-shadow-sm">
-            A peaceful space to read, work, and grow in the heart of Baguio.
+           A dedicated space and atmosphere of focus and balance, nestled at the Valleys of La Trinidad...
           </p>
         </div>
       </section>
@@ -151,14 +151,19 @@ export default function YogishasNestLanding() {
           </h2>
           <div className="mx-auto w-16 h-1 bg-green-500 rounded-full mb-6"></div>
           <p className="text-lg text-gray-700 leading-relaxed">
-            At Yogisha’s Nest, we believe in nurturing the mind through stillness, creativity, and focus. Nestled quietly on the 5th floor with a view of the hills, our library and co-working space offers an environment where students, freelancers, and dreamers alike can thrive.
+<p className="text-lg text-gray-700 leading-relaxed">
+  Yogisha’s Nest offers a dedicated co-working space where motivation thrives and learning becomes a shared, uplifting experience. In a commitment to offer a conducive space, Yogisha’s Nest is designed to support focus and balance, empowering oneself to ignite creativity, elevate productivity, and cultivate personal growth.
+</p>
+
           </p>
         </motion.div>
       </section>
       {/* Gallery Section */}
 <section id="gallery" className="py-20 px-6 bg-white text-center">
-  <h2 className="text-3xl md:text-4xl font-bold mb-12 text-gray-800">A Glimpse Inside</h2>
 
+<h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+  👀👀👀
+</h2>
   <div className="max-w-6xl mx-auto">
     <Swiper
       modules={[Autoplay, Pagination, Navigation]}
@@ -193,47 +198,29 @@ export default function YogishasNestLanding() {
 
 
       {/* Amenities Section */}
-      <section id="amenities" className="py-20 px-6 bg-white text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="mb-10"
-        >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            What We <span className="text-green-600">Offer</span>
-          </h2>
-          <div className="mx-auto w-16 h-1 bg-green-500 rounded-full"></div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto"
-        >
-          {[
-            "📚 Library Nook – For readers and exam warriors",
-            "💻 Co-working Space – For freelancers and thinkers",
-            "🌸 Peaceful Ambience – Nature-inspired, silent, and clean",
-            "🌿 Indoor Plants & Balcony – Reconnect with nature while you work",
-            "🚶 Walk-ins Welcome – Come in anytime during open hours",
-            "⚡ Free WiFi & Charging Ports"
-          ].map((item, i) => (
-            <motion.div
-              key={i}
-              className="bg-green-50 border border-green-100 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300 text-left"
-              whileHover={{ scale: 1.02 }}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
-            >
-              <p className="text-gray-700 font-medium text-lg">{item}</p>
-            </motion.div>
-          ))}
-        </motion.div>
-      </section>
-
+ 
+<section id="amenities" className="py-20 px-6 bg-white text-left">
+  <div className="max-w-5xl mx-auto space-y-8">
+    <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+      ✨ Features That Make Us Special
+    </h2>
+    <ul className="space-y-6 text-lg text-gray-700 list-disc pl-5">
+      <li><strong>📍 Prime Location – Heart of La Trinidad, Benguet:</strong> Conveniently situated in the vibrant center...</li>
+      <li><strong>🪑 Ergonomic Study Furniture – Designed for Comfort and Focus:</strong> Our thoughtfully curated study tables and chairs are tailored...</li>
+      <li><strong>🧭 Maximized Wall-Facing Orientation – Enhancing Concentration:</strong> Each workstation is strategically positioned...</li>
+      <li><strong>🌐 Fast and Stable High-Speed WiFi:</strong> Stay connected with seamless, ultra-fast internet...</li>
+      <li><strong>🔌 Charging Outlets Everywhere:</strong> Never run out of power with conveniently placed outlets...</li>
+      <li><strong>🧹 Clean, Well-Ventilated Environment:</strong> Breathe easy in a bright, airy space...</li>
+      <li><strong>🎨 Distraction-Free Minimalist Design:</strong> Thoughtfully designed, clutter-free space promotes clarity...</li>
+      <li><strong>🕯 Ambient Oil Lamps & Incense:</strong> Subtle lighting yet impactful energy from oil lamps...</li>
+      <li><strong>🌿 Harmonious Coexistence with Air-Purifying Plants:</strong> Our space is enriched with air-purifying plants...</li>
+      <li><strong>🧘 Rejuvenating Alfresco Space:</strong> Step outside into our refreshing alfresco area...</li>
+      <li><strong>🍵 Nourishing Tea & Honey:</strong> Savor a warm cup of tea, infused with calming herbs...</li>
+      <li><strong>🛠 Customizable Comfort: Lamp, Book Stand & Divider upon Request:</strong> Tailor your workspace to your needs...</li>
+      <li><strong>💧 Refreshing Energized Drinking Water in Copper Vessels:</strong> Stay hydrated with refreshing, energized water...</li>
+    </ul>
+  </div>
+</section>
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6 bg-green-50 text-center">
         <motion.div
