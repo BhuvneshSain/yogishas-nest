@@ -138,8 +138,7 @@ export default function YogishasNestLanding() {
       </h1>
 
       <p className="text-lg text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
-        A dedicated space and atmosphere of focus and balance, nestled at the Valleys of La Trinidad....
-      </p>
+A dedicated space and atmosphere of focus and balance, nestled at the Valleys of La Trinidad, designed to be a sanctuary of one's growth, creativity and productivity.      </p>
 
       <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-6">
         <a
@@ -252,25 +251,61 @@ export default function YogishasNestLanding() {
   >
     <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
       Yogisha’s Nest
-      <span className="text-green-600 ">  Offerings 🥰</span>
+      <span className="text-green-600"> Offerings 🥰</span>
     </h2>
     <div className="mx-auto w-16 h-1 bg-green-500 rounded-full"></div>
   </motion.div>
 
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
     {[
-      ["📍 Prime Location – Heart of La Trinidad, Benguet", "Conveniently situated in the vibrant center of La Trinidad..."],
-      ["🪑 Ergonomic Study Furniture – Designed for Comfort and Focus", "Curated seating supports Ardha Siddhasana posture..."],
-      ["🧭 Wall-Facing Orientation – Enhancing Concentration", "Each workstation minimizes distractions by facing walls..."],
-      ["🌐 Fast and Stable High-Speed WiFi", "Seamless internet connection for your productivity..."],
-      ["🔌 Charging Outlets Everywhere", "Never run out of power with easily accessible outlets..."],
-      ["🧹 Clean, Well-Ventilated Environment", "Fresh air and open top-floor layout ensures comfort..."],
-      ["🎨 Distraction-Free Minimalist Design", "A clutter-free space that fuels deep focus..."],
-      ["🕯 Ambient Oil Lamps & Incense", "Subtle lighting and aroma to calm and energize..."],
-      ["🌿 Air-Purifying Plants", "Serene and healthier atmosphere with nature’s touch..."],
-      ["🧘 Rejuvenating Alfresco Space", "Peaceful outdoor zone to reset and recharge..."],
-      ["🍵 Nourishing Tea & Honey", "Enjoy warm, calming herbal tea with natural honey..."],
-      ["💧 Energized Water in Copper Vessels", "Hydrate with naturally energized, fresh copper-stored water."]
+      [
+        "📍 Prime Location – Heart of La Trinidad, Benguet",
+        "Conveniently situated in the vibrant center of La Trinidad, Yogisha’s Nest offers unparalleled accessibility for students and professionals."
+      ],
+      [
+        "🪑 Ergonomic Study Furniture – Designed for Comfort and Focus",
+        "Our thoughtfully curated study tables and chairs are tailored to support individuals aiming to enhance their receptivity and concentration. Specifically, our seating arrangements facilitate the Ardha Siddhasana posture—a seated position known for promoting mental clarity and physical alignment."
+      ],
+      [
+        "🧭 Wall-Facing Orientation – Enhancing Concentration",
+        "Each workstation is strategically positioned to face the wall, minimizing distractions and promoting a deep focus. This arrangement supports a conducive study or work environment, allowing individuals to immerse themselves fully in their tasks without external interruptions."
+      ],
+      [
+        "🌐 Fast and Stable High-Speed WiFi",
+        "Stay connected with seamless, ultra-fast internet, enabling uninterrupted work and learning."
+      ],
+      [
+        "🔌 Charging Outlets Everywhere",
+        "Never run out of power with conveniently placed charging outlets throughout the space, ensuring your devices stay fully charged."
+      ],
+      [
+        "🧹 Clean, Well-Ventilated Environment",
+        "Breathe easy in a bright, airy space with optimal airflow on the top floor, ensuring a fresh and comfortable atmosphere for productivity and ease."
+      ],
+      [
+        "🎨 Distraction-Free Minimalist Design",
+        "Thoughtfully designed, clutter-free space promotes clarity and focus, helping you to stay immersed in your work with zero distractions."
+      ],
+      [
+        "🕯 Ambient Oil Lamps & Incense",
+        "Subtle lighting yet impactful energy from oil lamps and the calming fragrance and purification of incense create an environment that fosters concentration, ease, and creativity."
+      ],
+      [
+        "🌿 Air-Purifying Plants",
+        "Our space is enriched with air-purifying plants, promoting both a healthier environment and a serene, grounded atmosphere for focused work."
+      ],
+      [
+        "🧘 Rejuvenating Alfresco Space",
+        "Step outside into our refreshing alfresco area, a peaceful retreat where you can recharge, stretch your legs, or simply enjoy the outdoors."
+      ],
+      [
+        "🍵 Nourishing Tea & Honey",
+        "Savor a warm cup of tea, infused with calming herbs, and sweetened with natural honey—perfect for a mid-work boost or moment of pause."
+      ],
+      [
+        "💧 Energized Water in Copper Vessels",
+        "Stay hydrated with refreshing, naturally energized water served in copper vessels, supporting your well-being throughout your workday."
+      ]
     ].map(([title, desc], i) => (
       <motion.div
         key={i}
@@ -280,12 +315,13 @@ export default function YogishasNestLanding() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: i * 0.1 }}
       >
-        <h3 className="font-semibold text-gray-800 mb-2">{title}</h3>
-        <p className="text-gray-600 text-sm">{desc}</p>
+        <h3 className="font-semibold text-green-800 mb-2">{title}</h3>
+        <p className="text-gray-700 text-sm leading-relaxed">{desc}</p>
       </motion.div>
     ))}
   </div>
 </section>
+
 
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6 bg-green-50 text-center">
