@@ -123,32 +123,58 @@ export default function YogishasNestLanding() {
       </nav>
 
       {/* Hero Section */}
-<section
-  id="home"
-  className="relative min-h-[90vh] w-full bg-cover bg-center bg-no-repeat flex items-center justify-center text-white"
-  style={{ backgroundImage: "url('/infra.jpg')" }}
->
-  {/* Dark Overlay */}
-  <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-transparent"></div>
+<section id="home" className="py-20 bg-white text-gray-800 overflow-hidden">
+  <div className="max-w-7xl mx-auto px-6 flex flex-col-reverse lg:flex-row items-center gap-12">
+    
+    {/* Text Left */}
+    <motion.div
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.7 }}
+      className="flex-1 text-center lg:text-left space-y-6"
+    >
+      <h1 className="text-3xl md:text-4xl font-bold">
+        Blossom into A <span className="text-green-600">Full-Fledged Life!</span>
+      </h1>
 
-  {/* Centered Animated Text */}
-  <motion.div
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.8 }}
-    className="relative z-10 text-center px-4 max-w-3xl"
-  >
-    <h1 className="text-3xl md:text-4xl font-bold text-white-800 mb-4 drop-shadow-lg">
-      Blossom into A
-      <span className="text-green-600 drop-shadow-lg"> Full-Fledged Life!</span>
-      
-    </h1>
+      <p className="text-lg text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
+        A dedicated space and atmosphere of focus and balance, nestled at the Valleys of La Trinidad, designed to be a sanctuary of one's growth, creativity and productivity.
+      </p>
 
-    <p className="mt-6 text-lg sm:text-xl font-medium text-white leading-relaxed drop-shadow-md">
-      A dedicated space and atmosphere of focus and balance, nestled at the Valleys of La Trinidad....
-    </p>
-  </motion.div>
+      <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-6">
+        <a
+          href="#contact"
+          className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-2 rounded-md shadow transition"
+        >
+          Visit Us
+        </a>
+        <a
+          href="#amenities"
+          className="border border-green-600 text-green-600 hover:bg-green-600 hover:text-white font-semibold px-6 py-2 rounded-md transition"
+        >
+          Explore Nest
+        </a>
+      </div>
+    </motion.div>
+
+    {/* Image Right */}
+    <motion.div
+      initial={{ opacity: 0, x: 50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.7, delay: 0.2 }}
+      className="flex-1"
+    >
+      <img
+        src="/infra.jpg"
+        alt="Yogisha's Nest Infra"
+        className="w-full max-w-lg mx-auto rounded-2xl shadow-xl object-cover"
+      />
+    </motion.div>
+  </div>
 </section>
+
+
+
 
 
   {/* About Section */}
@@ -159,6 +185,8 @@ export default function YogishasNestLanding() {
           transition={{ duration: 0.6 }}
           className="max-w-3xl mx-auto"
         >
+
+
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
             About <span className="text-green-600">Yogisha’s Nest</span>
           </h2>
@@ -224,7 +252,7 @@ export default function YogishasNestLanding() {
   >
     <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
       Yogisha’s Nest
-      <span className="text-green-600 drop-shadow-lg">  Offerings 🥰</span>
+      <span className="text-green-600 ">  Offerings 🥰</span>
     </h2>
     <div className="mx-auto w-16 h-1 bg-green-500 rounded-full"></div>
   </motion.div>
