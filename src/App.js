@@ -123,21 +123,34 @@ export default function YogishasNestLanding() {
       </nav>
 
       {/* Hero Section */}
-      <section
-        id="home"
-        className="relative h-screen w-full bg-cover bg-center bg-no-repeat flex items-center justify-center text-white"
-        style={{ backgroundImage: "url('/infra.jpg')" }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-transparent"></div>
-        <div className="relative z-10 text-center px-4">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight drop-shadow-md">
-            Blossom into <span className="text-green-300">A Full-Fledged Life!</span>
-          </h1>
-          <p className="mt-4 text-lg sm:text-xl max-w-xl mx-auto drop-shadow-sm">
-           A dedicated space and atmosphere of focus and balance, nestled at the Valleys of La Trinidad...
-          </p>
-        </div>
-      </section>
+<section
+  id="home"
+  className="relative min-h-[90vh] w-full bg-cover bg-center bg-no-repeat flex items-center justify-center text-white"
+  style={{ backgroundImage: "url('/infra.jpg')" }}
+>
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-transparent"></div>
+
+  {/* Centered Animated Text */}
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+    className="relative z-10 text-center px-4 max-w-3xl"
+  >
+    <h1 className="text-3xl md:text-4xl font-bold text-white-800 mb-4 drop-shadow-lg">
+      Blossom into A
+      <span className="text-green-600 drop-shadow-lg"> Full-Fledged Life!</span>
+      
+    </h1>
+
+    <p className="mt-6 text-lg sm:text-xl font-medium text-white leading-relaxed drop-shadow-md">
+      A dedicated space and atmosphere of focus and balance, nestled at the Valleys of La Trinidad....
+    </p>
+  </motion.div>
+</section>
+
+
   {/* About Section */}
       <section id="about" className="py-20 px-6 bg-green-50 text-center">
         <motion.div
@@ -163,7 +176,10 @@ export default function YogishasNestLanding() {
 
 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
   👀👀👀
+
 </h2>
+
+
   <div className="max-w-6xl mx-auto">
     <Swiper
       modules={[Autoplay, Pagination, Navigation]}
@@ -199,28 +215,50 @@ export default function YogishasNestLanding() {
 
       {/* Amenities Section */}
  
-<section id="amenities" className="py-20 px-6 bg-white text-left">
-  <div className="max-w-5xl mx-auto space-y-8">
+<section id="amenities" className="py-20 px-6 bg-white text-center">
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6 }}
+    className="mb-10"
+  >
     <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-      ✨ Features That Make Us Special
+      Yogisha’s Nest
+      <span className="text-green-600 drop-shadow-lg">  Offerings 🥰</span>
     </h2>
-    <ul className="space-y-6 text-lg text-gray-700 list-disc pl-5">
-      <li><strong>📍 Prime Location – Heart of La Trinidad, Benguet:</strong> Conveniently situated in the vibrant center...</li>
-      <li><strong>🪑 Ergonomic Study Furniture – Designed for Comfort and Focus:</strong> Our thoughtfully curated study tables and chairs are tailored...</li>
-      <li><strong>🧭 Maximized Wall-Facing Orientation – Enhancing Concentration:</strong> Each workstation is strategically positioned...</li>
-      <li><strong>🌐 Fast and Stable High-Speed WiFi:</strong> Stay connected with seamless, ultra-fast internet...</li>
-      <li><strong>🔌 Charging Outlets Everywhere:</strong> Never run out of power with conveniently placed outlets...</li>
-      <li><strong>🧹 Clean, Well-Ventilated Environment:</strong> Breathe easy in a bright, airy space...</li>
-      <li><strong>🎨 Distraction-Free Minimalist Design:</strong> Thoughtfully designed, clutter-free space promotes clarity...</li>
-      <li><strong>🕯 Ambient Oil Lamps & Incense:</strong> Subtle lighting yet impactful energy from oil lamps...</li>
-      <li><strong>🌿 Harmonious Coexistence with Air-Purifying Plants:</strong> Our space is enriched with air-purifying plants...</li>
-      <li><strong>🧘 Rejuvenating Alfresco Space:</strong> Step outside into our refreshing alfresco area...</li>
-      <li><strong>🍵 Nourishing Tea & Honey:</strong> Savor a warm cup of tea, infused with calming herbs...</li>
-      <li><strong>🛠 Customizable Comfort: Lamp, Book Stand & Divider upon Request:</strong> Tailor your workspace to your needs...</li>
-      <li><strong>💧 Refreshing Energized Drinking Water in Copper Vessels:</strong> Stay hydrated with refreshing, energized water...</li>
-    </ul>
+    <div className="mx-auto w-16 h-1 bg-green-500 rounded-full"></div>
+  </motion.div>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+    {[
+      ["📍 Prime Location – Heart of La Trinidad, Benguet", "Conveniently situated in the vibrant center of La Trinidad..."],
+      ["🪑 Ergonomic Study Furniture – Designed for Comfort and Focus", "Curated seating supports Ardha Siddhasana posture..."],
+      ["🧭 Wall-Facing Orientation – Enhancing Concentration", "Each workstation minimizes distractions by facing walls..."],
+      ["🌐 Fast and Stable High-Speed WiFi", "Seamless internet connection for your productivity..."],
+      ["🔌 Charging Outlets Everywhere", "Never run out of power with easily accessible outlets..."],
+      ["🧹 Clean, Well-Ventilated Environment", "Fresh air and open top-floor layout ensures comfort..."],
+      ["🎨 Distraction-Free Minimalist Design", "A clutter-free space that fuels deep focus..."],
+      ["🕯 Ambient Oil Lamps & Incense", "Subtle lighting and aroma to calm and energize..."],
+      ["🌿 Air-Purifying Plants", "Serene and healthier atmosphere with nature’s touch..."],
+      ["🧘 Rejuvenating Alfresco Space", "Peaceful outdoor zone to reset and recharge..."],
+      ["🍵 Nourishing Tea & Honey", "Enjoy warm, calming herbal tea with natural honey..."],
+      ["💧 Energized Water in Copper Vessels", "Hydrate with naturally energized, fresh copper-stored water."]
+    ].map(([title, desc], i) => (
+      <motion.div
+        key={i}
+        className="bg-green-50 border border-green-100 p-6 rounded-xl shadow hover:shadow-lg transition duration-300 text-left"
+        whileHover={{ scale: 1.03 }}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: i * 0.1 }}
+      >
+        <h3 className="font-semibold text-gray-800 mb-2">{title}</h3>
+        <p className="text-gray-600 text-sm">{desc}</p>
+      </motion.div>
+    ))}
   </div>
 </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6 bg-green-50 text-center">
         <motion.div
@@ -230,7 +268,7 @@ export default function YogishasNestLanding() {
           className="max-w-3xl mx-auto"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Come Find Your <span className="text-green-600">Calm</span>
+           Gather, Grow and <span className="text-green-600">Blossom!</span>
           </h2>
           <div className="mx-auto w-16 h-1 bg-green-500 rounded-full mb-6"></div>
           <p className="text-lg text-gray-700 mb-4">
