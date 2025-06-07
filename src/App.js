@@ -138,7 +138,7 @@ export default function YogishasNestLanding() {
       </h1>
 
       <p className="text-lg text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
-        A dedicated space and atmosphere of focus and balance, nestled at the Valleys of La Trinidad, designed to be a sanctuary of one's growth, creativity and productivity.
+        A dedicated space and atmosphere of focus and balance, nestled at the Valleys of La Trinidad....
       </p>
 
       <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-6">
