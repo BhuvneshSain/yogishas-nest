@@ -85,7 +85,7 @@ export default function YogishasNestLanding() {
               <img src="/logo.png" alt="Logo" className="h-10 object-contain transition-transform hover:rotate-6" />
               <div className="hidden sm:block">
                 <span className="block text-lg font-semibold text-green-700">Yogisha’s Nest</span>
-                <span className="text-sm text-gray-500">A Nest for Mind & Study</span>
+                <span className="text-sm text-gray-500">Sanctuary for growth, focus and balance</span>
               </div>
             </a>
             <div className="hidden md:flex items-center space-x-6">
@@ -336,7 +336,7 @@ A dedicated space and atmosphere of focus and balance, nestled at the Valleys of
           </h2>
           <div className="mx-auto w-16 h-1 bg-green-500 rounded-full mb-6"></div>
           <p className="text-lg text-gray-700 mb-4">
-            5th Floor, IB, 41b Laoyan I St, Baguio, 2601 Benguet, Philippines
+            2nd Floor, IB, 41b Laoyan I St, Baguio, 2601 Benguet, Philippines
           </p>
         </motion.div>
 
