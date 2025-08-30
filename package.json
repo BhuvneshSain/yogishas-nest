@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.7",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
@@ -17,7 +16,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "prestart": "node tools/optimize-images.mjs",
     "start": "react-scripts start",
+    "prebuild": "node tools/optimize-images.mjs",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -41,7 +42,9 @@
     ]
   },
   "devDependencies": {
+    "tailwindcss": "^3.4.10",
     "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.3"
+    "postcss": "^8.5.3",
+    "sharp": "^0.33.4"
   }
 }

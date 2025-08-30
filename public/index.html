@@ -3,31 +3,105 @@
  <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0b1324" />
+  <meta name="color-scheme" content="light dark" />
   <meta name="description" content="A peaceful co-working and reading space in Baguio – Yogisha’s Nest." />
 
   <!-- Open Graph / WhatsApp / Facebook -->
   <meta property="og:title" content="Yogisha’s Nest – A Focus & Growth Sanctuary" />
   <meta property="og:description" content="Visit the newly upgraded Yogisha’s Nest website with fresh visuals, powerful amenities, and modern design!" />
   <meta property="og:image" content="%PUBLIC_URL%/preview.png" />
-  <meta property="og:url" content="https://yogishasnest.netlify.app" />
+  <meta property="og:image:secure_url" content="https://yogishasnest.netlify.app/preview.png" />
+  <meta property="og:url" content="https://yogishasnest.netlify.app/" />
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Yogisha’s Nest" />
+  <meta property="og:locale" content="en_PH" />
+  <meta property="og:image:alt" content="Yogisha’s Nest co-study and focus space preview" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:see_also" content="https://www.instagram.com/yogishasnest/" />
+  <meta property="og:see_also" content="https://www.facebook.com/people/Yogishas-Nest/61574977436271/" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Yogisha’s Nest – Sanctuary for growth, focus and balance" />
   <meta name="twitter:description" content="Visit the newly upgraded Yogisha’s Nest website with fresh visuals and modern design!" />
-  <meta name="twitter:image" content="%PUBLIC_URL%/preview.png" />
+  <meta name="twitter:image" content="https://yogishasnest.netlify.app/preview.png" />
+  <meta name="twitter:image:alt" content="Yogisha’s Nest co-study and focus space preview" />
+  <meta name="robots" content="index, follow" />
 
   <title>Yogisha’s Nest – Sanctuary for growth, focus and balance</title>
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://yogishasnest.netlify.app/" />
+  <link rel="alternate" href="https://yogishasnest.netlify.app/" hreflang="en" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="%PUBLIC_URL%/sitemap.xml" />
+  
+  <!-- Identity links for social verification -->
+  <link rel="me" href="https://www.instagram.com/yogishasnest/" />
+  <link rel="me" href="https://www.facebook.com/people/Yogishas-Nest/61574977436271/" />
 
   <!-- Favicon -->
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Yogisha’s Nest" />
+  <meta name="msapplication-TileColor" content="#065f46" />
 
   <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  
+  <!-- Preload hero image -->
+  <link rel="preload" as="image" href="%PUBLIC_URL%/infra.jpg" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Yogisha’s Nest",
+    "url": "https://yogishasnest.netlify.app/",
+    "image": {"@type":"ImageObject","url":"%PUBLIC_URL%/preview.png","width":1200,"height":630},
+    "logo": {"@type":"ImageObject","url":"%PUBLIC_URL%/logo512.png","width":512,"height":512},
+    "description": "A serene co-study and focus space in Benguet designed for growth, creativity, and productivity.",
+    "telephone": "+63 961 904 7116",
+    "geo": {"@type": "GeoCoordinates", "latitude": 16.4534902, "longitude": 120.589356},
+    "hasMap": "https://maps.app.goo.gl/W8n5B2dE2sJNQcLW9",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2nd Floor, IB, 41b Laoyan I St",
+      "addressLocality": "Baguio",
+      "postalCode": "2601",
+      "addressRegion": "Benguet",
+      "addressCountry": "PH"
+    },
+    "sameAs": [
+      "https://maps.app.goo.gl/W8n5B2dE2sJNQcLW9",
+      "https://www.instagram.com/yogishasnest/",
+      "https://www.facebook.com/people/Yogishas-Nest/61574977436271/"
+    ],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "06:00",
+      "closes": "23:30"
+    },
+    "priceRange": "$"
+  }
+  </script>
 </head>
 
   <body>

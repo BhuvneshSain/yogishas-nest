@@ -5,3 +5,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .theme-transition, .theme-transition * {
+    transition-property: background-color, color, border-color, fill, stroke, box-shadow;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+  }
+}
+
+/* Swiper theming for visibility in light/dark */
+:root {
+  --swiper-theme-color: #16a34a; /* tailwind green-600 */
+}
+.dark {
+  --swiper-theme-color: #22c55e; /* tailwind green-500 */
+}
+.swiper-button-next, .swiper-button-prev {
+  color: var(--swiper-theme-color);
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.35));
+}
+.swiper-pagination-bullet {
+  background: rgba(107,114,128,0.6); /* gray-500 */
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background: var(--swiper-theme-color);
+}
+.dark .swiper-pagination-bullet {
+  background: rgba(229,231,235,0.6); /* gray-200 */
+}
