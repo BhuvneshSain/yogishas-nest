@@ -57,4 +57,10 @@ The project is deployed on Netlify. To deploy your own version:
 Feel free to fork the repo, raise issues, or contribute to enhance this community space experience.
 
 ---
+
+## 📝 Changelog
+
+See CHANGELOG.md for a summary of recent changes.
+
+---
 © 2025 Yogisha’s Nest. All rights reserved.
