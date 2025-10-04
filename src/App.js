@@ -305,7 +305,7 @@ A dedicated space and atmosphere of focus and balance, nestled at the Valleys of
   >
     <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">
       Yogisha’s Nest
-      <span className="text-green-600"> Offerings 🥰</span>
+      <span className="text-green-600"> Offerings 💝</span>
     </h2>
     <div className="mx-auto w-16 h-1 bg-green-500 rounded-full"></div>
   </motion.div>
