@@ -250,7 +250,7 @@ A dedicated space and atmosphere of focus and balance, nestled at the Valleys of
           </h2>
           <div className="mx-auto w-16 h-1 bg-green-500 rounded-full mb-6"></div>
           <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-            Yogisha’s Nest offers a dedicated co-working space where motivation thrives and learning becomes a shared, uplifting experience. In a commitment to offer a conducive space, Yogisha’s Nest is designed to support focus and balance, empowering oneself to ignite creativity, elevate productivity, and cultivate personal growth.
+            Yogisha’s Nest is a 24/7 open study hub and creative workspace near Benguet State University, nestled in the heart of La Trinidad, Benguet — just minutes from Baguio City. Designed as a hybrid productivity space, it offers a quiet reading lounge, dedicated study rooms, and flexible office space for both day and night study. With fast Wi-Fi, inverter-backed power systems, and self check-in & check-out access, Yogisha’s Nest supports uninterrupted focus and comfort. Whether you're seeking a peaceful library atmosphere, a collaborative study and work zone, or an all-night access pass for deep night study, our space is built to elevate your learning and working experience.
           </p>
         </motion.div>
       </section>
