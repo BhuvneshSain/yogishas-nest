@@ -107,7 +107,7 @@ export default function YogishasNestLanding() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection("home"); }} className="flex items-center space-x-2 cursor-pointer hover:opacity-90">
-              <img src="/logo.png" alt="Logo" className="h-10 object-contain transition-transform hover:rotate-6" />
+              <img src="/logo.png" alt="Coworking Space La Trinidad" className="h-10 object-contain transition-transform hover:rotate-6" />
               <div className="hidden sm:block">
                 <span className="block text-lg font-semibold text-green-700 dark:text-green-400">Yogisha’s Nest</span>
                 <span className="text-sm text-gray-500 dark:text-gray-400">Sanctuary for growth, focus and balance</span>
@@ -186,8 +186,12 @@ export default function YogishasNestLanding() {
       className="flex-1 text-center lg:text-left space-y-6"
     >
       <h1 className="text-3xl md:text-4xl font-bold">
-        Blossom into A <span className="text-green-600">Full-Fledged Life!</span>
+        Yogisha's Nest <span className="text-green-600">A Coworking Space cum Library, La Trinidad</span>
       </h1>
+        
+      <h2 className="text-3xl md:text-4xl font-bold">
+        Blossom into A <span className="text-green-600">Full-Fledged Life!</span>
+      </h2>
 
       <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed max-w-xl mx-auto lg:mx-0">
 A dedicated space and atmosphere of focus and balance, nestled at the Valleys of La Trinidad, designed to be a sanctuary of one's growth, creativity and productivity.      </p>
@@ -217,7 +221,7 @@ A dedicated space and atmosphere of focus and balance, nestled at the Valleys of
     >
       <img
         src="/infra.jpg"
-        alt="Yogisha's Nest Infra"
+        alt="Coworking Space in La Trinidad"
         className="w-full max-w-lg mx-auto rounded-2xl shadow-xl object-cover"
         loading="eager"
         fetchpriority="high"
