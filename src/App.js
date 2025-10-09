@@ -189,7 +189,7 @@ export default function YogishasNestLanding() {
         Yogisha's Nest <span className="text-green-600">A Coworking Space cum Library, La Trinidad</span>
       </h1>
         
-      <h2 className="text-3xl md:text-4xl font-bold">
+      <h2 className="text-2xl md:text-3xl font-bold">
         Blossom into A <span className="text-green-600">Full-Fledged Life!</span>
       </h2>
 
