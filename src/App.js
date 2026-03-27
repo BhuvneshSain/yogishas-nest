@@ -435,7 +435,7 @@ A dedicated space and atmosphere of focus and balance, nestled at the Valleys of
       {/* Footer */}
    <footer className="bg-gray-800 dark:bg-black text-gray-200 dark:text-gray-300 py-6 text-center text-sm border-t border-white/30 dark:border-white/10 shadow-inner transition-colors">
   &copy; {new Date().getFullYear()} <span className="font-semibold">Yogisha’s Nest</span> · All rights reserved. <br />
-  Built with ❤️ by{" "}
+  Built by{" "}
   <a
     href="https://github.com/BhuvneshSain"
     target="_blank"
